@@ -18,3 +18,7 @@ install:
   - go get github.com/syndtr/goleveldb/leveldb/util
   - go get labix.org/v2/mgo
   - go get labix.org/v2/mgo/bson
+
+script:
+    - go test -race -v ./...
+
